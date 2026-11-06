@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">HMTIKA</string>
+    <string name="app_full_title">HMTIKA Mobile</string>
+    <string name="campus_name">STIMIK TUNAS BANGSA BANJARNEGARA</string>
+    <string name="tagline">“Jangan Lupa Titik Koma”</string>
+    <string name="organization_name">Himpunan Mahasiswa Teknik Informatika</string>
+
+    <!-- Auth Strings -->
+    <string name="login_title">Masuk ke Akun Anda</string>
+    <string name="login_subtitle">Gunakan NIM atau Email Kampus terdaftar</string>
+    <string name="role_mahasiswa">Mahasiswa</string>
+    <string name="role_pengurus">Pengurus (Core)</string>
+    <string name="hint_nim_email">NIM / Email Kampus</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_confirm_password">Konfirmasi Password</string>
+    <string name="hint_name">Nama Lengkap</string>
+    <string name="hint_pin_pengurus">Kode PIN Khusus Pengurus</string>
+    <string name="btn_login">Login Sekarang</string>
+    <string name="btn_register">Daftar Sekarang</string>
+    <string name="no_account_prompt">Belum memiliki akun?</string>
+    <string name="have_account_prompt">Sudah punya akun?</string>
+    <string name="link_register">Daftar Akun Baru</string>
+    <string name="link_login">Masuk di sini</string>
+    <string name="quick_demo_title">⚡ Akses Cepat Akun Demo</string>
+    <string name="quick_demo_subtitle">Login langsung untuk mencoba fitur tanpa mengetik</string>
+    <string name="demo_mahasiswa_btn">Demo Mahasiswa</string>
+    <string name="demo_pengurus_btn">Demo Pengurus</string>
+
+    <!-- Dashboard Strings -->
+    <string name="cta_absen_title">Absen Rapat Sekarang</string>
+    <string name="cta_absen_subtitle">Presensi kehadiran rapat pengurus dengan kamera live</string>
+    <string name="search_hint">Cari event, workshop, narasumber...</string>
+    <string name="section_events">Daftar Kegiatan &amp; Event</string>
+    <string name="section_announcements">Pengumuman &amp; Info Pengurus</string>
+    <string name="btn_add_event">+ Tambah Event</string>
+    <string name="btn_add_announcement">+ Tambah Info</string>
+    <string name="btn_add_info">+ Tambah Info</string>
+
+    <!-- Camera Presence Strings -->
+    <string name="camera_screen_title">Presensi Rapat</string>
+    <string name="camera_screen_subtitle">Core Team Live Camera</string>
+    <string name="agenda_label">Pilih Agenda Pertemuan</string>
+    <string name="capture_btn">Ambil Foto Presensi</string>
+    <string name="submit_presence_btn">Kirim Presensi Rapat</string>
+    <string name="presence_history_title">Riwayat Presensi Rapat Terverifikasi</string>
+
+    <!-- Detail Event & Certificate Strings -->
+    <string name="event_detail_title">Detail Kegiatan</string>
+    <string name="claim_cert_title">Klaim Sertifikat Kehadiran</string>
+    <string name="btn_claim_cert">Dapatkan E-Sertifikat</string>
+    <string name="btn_download_cert">Download Sertifikat (PDF)</string>
+    <string name="rekap_title">Rekapitulasi Daftar Hadir</string>
+    <string name="btn_export_rekap">Unduh Rekap</string>
+
+    <!-- Profile Strings -->
+    <string name="profile_title">Profil &amp; Pengaturan</string>
+    <string name="btn_logout">Keluar dari Akun (Logout)</string>
+    <string name="logout_confirm_title">Konfirmasi Logout</string>
+    <string name="logout_confirm_message">Apakah Anda yakin ingin keluar dari sesi aplikasi HMTIKA Mobile?</string>
+
+    <!-- Navigation Strings -->
+    <string name="nav_home">Beranda</string>
+    <string name="nav_attendance">Presensi</string>
+    <string name="nav_profile">Profil</string>
+</resources>

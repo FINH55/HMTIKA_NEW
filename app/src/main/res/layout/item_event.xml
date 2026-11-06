@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardEventItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="8dp"
+    app:cardBackgroundColor="@color/hmtika_surface"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="3dp"
+    app:strokeColor="@color/hmtika_border"
+    app:strokeWidth="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Top Header: Category & Management Actions -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvEventCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_badge_teal"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="4dp"
+                android:textColor="@color/hmtika_teal"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                tools:text="WORKSHOP" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <!-- Edit Button (for Pengurus) -->
+            <ImageButton
+                android:id="@+id/btnEditEvent"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Edit Event"
+                android:src="@drawable/ic_camera_24"
+                android:tint="@color/hmtika_teal"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+            <!-- Delete Button (for Pengurus) -->
+            <ImageButton
+                android:id="@+id/btnDeleteEvent"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="4dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Hapus Event"
+                android:src="@drawable/ic_logout_24"
+                android:tint="@color/coral_error"
+                android:visibility="gone"
+                tools:visibility="visible" />
+        </LinearLayout>
+
+        <!-- Event Title -->
+        <TextView
+            android:id="@+id/tvEventTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/hmtika_text_primary"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="Tech Talk: Artificial Intelligence &amp; Gemini in Android" />
+
+        <!-- Date & Time Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:contentDescription="Date"
+                android:src="@drawable/ic_calendar_24"
+                app:tint="@color/hmtika_teal" />
+
+            <TextView
+                android:id="@+id/tvEventDateTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textColor="@color/hmtika_text_secondary"
+                android:textSize="12sp"
+                tools:text="28 Oktober 2026 • 09.00 - 12.00 WIB" />
+        </LinearLayout>
+
+        <!-- Location Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:contentDescription="Location"
+                android:src="@drawable/ic_location_24"
+                app:tint="@color/electric_blue" />
+
+            <TextView
+                android:id="@+id/tvEventLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/hmtika_text_secondary"
+                android:textSize="12sp"
+                tools:text="Ruang Teater Gedung B &amp; Zoom Live" />
+        </LinearLayout>
+
+        <!-- Speaker Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:contentDescription="Speaker"
+                android:src="@drawable/ic_person_24"
+                app:tint="@color/hmtika_amber" />
+
+            <TextView
+                android:id="@+id/tvEventSpeaker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/hmtika_text_primary"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:text="Aris Setiawan (Google Developer Expert)" />
+        </LinearLayout>
+
+        <!-- Quota Progress Bar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ProgressBar
+                android:id="@+id/pbEventQuota"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="0dp"
+                android:layout_height="6dp"
+                android:layout_weight="1"
+                android:max="100"
+                android:progress="80"
+                android:progressTint="@color/hmtika_teal" />
+
+            <TextView
+                android:id="@+id/tvEventQuotaText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/hmtika_text_secondary"
+                android:textSize="11sp"
+                tools:text="124/150 Terdaftar" />
+        </LinearLayout>
+
+        <!-- CTA Detail Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnEventDetail"
+            style="@style/Widget.Material3.Button.TonalButton"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="@color/hmtika_teal_subtle"
+            android:text="Lihat Detail &amp; Sertifikat"
+            android:textAllCaps="false"
+            android:textColor="@color/hmtika_teal_dark"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:cornerRadius="10dp" />
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

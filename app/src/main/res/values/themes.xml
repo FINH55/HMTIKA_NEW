@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Hmtika" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Brand Colors -->
+        <item name="colorPrimary">@color/hmtika_teal</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryContainer">@color/hmtika_teal_subtle</item>
+        <item name="colorOnPrimaryContainer">@color/hmtika_teal_dark</item>
+        <item name="colorSecondary">@color/hmtika_teal_light</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorTertiary">@color/hmtika_amber</item>
+        <item name="colorOnTertiary">@color/white</item>
+
+        <!-- Background & Surface -->
+        <item name="android:colorBackground">@color/hmtika_background</item>
+        <item name="colorSurface">@color/hmtika_surface</item>
+        <item name="colorOnSurface">@color/hmtika_text_primary</item>
+        <item name="colorSurfaceVariant">@color/hmtika_surface_variant</item>
+        <item name="colorOnSurfaceVariant">@color/hmtika_text_secondary</item>
+        <item name="colorOutline">@color/hmtika_border</item>
+
+        <!-- Window System Bars -->
+        <item name="android:statusBarColor">@color/hmtika_background</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:navigationBarColor">@color/hmtika_background</item>
+        <item name="android:windowLightNavigationBar">true</item>
+    </style>
+
+    <!-- Legacy style alias to prevent any reference failure -->
+    <style name="Theme.MyApplication" parent="Theme.Hmtika" />
+</resources>
